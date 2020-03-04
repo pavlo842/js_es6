@@ -22,6 +22,15 @@ value = lastName.toLocaleUpperCase(); // все символы к вернему
 value = firstName.concat(' ', lastName); // сложение строк
 
 value = lastName.indexOf('l', 1); // поиск заданного символа - после запятой индекс с которого начать поиск
+value = lastName.indexOf('p'); // поиск заданного символа - найдет индекс с которого начинается буква p, если вернулось -1 то значит не найден символ
+
+value = lastName.includes('s'); // true - символ есть в строке, false -символ в строке отсутствует
+
+// метод для работы с подстрокой
+value = lastName.slice(0, 5); // вернет только символы начиная с 0 и по 4 включительно
+value = lastName.slice(1); // вернет только символы начиная с 1 индекса и по последний включительно
+value = lastName.slice(0, -2); // вернет только символы начиная с 0 индекса и до -2 индекса
+
+value = lastName.replace('Plllpls', 'Pahho hello'); // Замена одной строки на другую
 
 console.log(value);
-
