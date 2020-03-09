@@ -107,15 +107,24 @@ const userNameAge = users.map((user) => ({
 // console.log(userNameAge); // [{name: "Lucile Finley", age: 39}, ....]
 
 // reduce - развернуть массив, преобразовать, посчитать
-const totalBalance = users.reduce((acc, user, i, arr) => {
-    console.log(acc);
-    return (acc += user.balance);
-}, 0); // 1-й аргумент callback-функция, 2-й стартовое значение (по умолчанию - 1-й элемент массива)
+// const totalBalance = users.reduce((acc, user, i, arr) => {
+//     console.log(acc);
+//     return (acc += user.balance);
+// }, 0); // 1-й аргумент callback-функция, 2-й стартовое значение (по умолчанию - 1-й элемент массива)
 // acc - accumulator результат предыдущей операции, user - элемент массива, i - индекс, arr - массив
-console.log(totalBalance);
 
-16-59
+const totalBalance = users.reduce((acc, user) => (acc += user.balance), 0);
+// console.log(totalBalance);
+
+const userObj = users.reduce((acc, user) => {
+  acc[user._id] = user;
+  return acc;
+}, {}); // в качестве старта - {}
+// console.log(userObj);
+
 // some/every
+19-00
+
 // sort
 // find
 
