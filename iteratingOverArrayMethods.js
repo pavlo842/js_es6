@@ -122,11 +122,42 @@ const userObj = users.reduce((acc, user) => {
 }, {}); // в качестве старта - {}
 // console.log(userObj);
 
+
 // some/every
-19-00
+// some - вернет true если хотябы для одного элемента массива callback вернет true
+const isMale = users.some(user => user.gender === 'male');
+// console.log(isMale);
+
+// every - для каждого элемента массива callback вернет true
+const isAllMale = users.every(user => user.gender === 'male');
+// console.log(isAllMale);
+
+const isAll18 = users.every(user => user.age > 18);
+// console.log(isAll18);
+
 
 // sort
-// find
+// 1. изменяет массив
+// 2. сортирует как строки - числа по первому символу
+const strArr = ['Dan', 'Man', 'Alex'];
+strArr.sort();
+// console.log(strArr); // ["Alex", "Dan", "Man"]
+
+const numArr = [10, 7, 4, 9, 1];
+numArr.sort((prev, next) => prev - next); // Правильная сортировка чисел
+// console.log(numArr);
+
+// сортировка объектов
+users.sort((prevUser, nextUser) => prevUser.age - nextUser.age);
+console.log(users);
+
+
+
+
+
+// find - возвращает объект в котором найден результат callback
+const user = users.find(user => user.name === 'Robinson Coleman');
+// console.log(user);
 
 
 
