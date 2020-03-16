@@ -4,17 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ES6</title>
+    <style>
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 20px;
+          transition: background 800ms;
+        }
+  
+        html {
+          height: 100%;
+          background: hsl(193, 66%, 55%);
+          font: bold 40px helvetica, sans-serif;
+          color: red;
+        }
+  
+        body {
+          height: 100%;
+          background: hsl(193, 66%, 65%);
+        }
+  
+        .container {
+          height: 100%;
+          background: hsl(193, 66%, 75%);
+        }
+  
+        ul {
+          height: 100%;
+          list-style: none;
+          background: hsl(193, 66%, 85%);
+        }
+  
+        li {
+          height: 100%;
+          background: hsl(193, 66%, 95%);
+        }
+  
+        .highlight {
+          background: red;
+        }
+    </style>
 </head>
 <body>
     <h1>ES6</h1>
-    <h1>Events</h1>
-    <button>Click</button>
-    <a href="">Click link</a>
-    <div class="container"></div>
+    <div class="container">
+    <ul>
+        <li>Click on a layer to watch the event move through the DOM tree.</li>
+    </ul>
+    </div>
     
     <!-- <script src="app.js"></script> -->
     <!-- <script src="dom.js"></script> -->
     <!-- <script src="dom_manipulate.js"></script> -->
-    <script src="event_handling.js"></script>
+    <!-- <script src="event_handling.js"></script> -->
+    <script src="surfacing_diving_events.js"></script>
 </body>
 </html>
