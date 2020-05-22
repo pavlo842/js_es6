@@ -1,29 +1,35 @@
-// 003
-
-// comments
-
-//      single line
-
-/*
-        multi-line
-*/
-
-/**
- *      JSDoc comments
- */
-
- // Data types
-/** 1. Primitives
- *      1-1. Number - 123, 123.123, NaN, Infinity 
- *      1-2. String - "Hello", 'Hello', for variable -> `Hello`
- *      1-3. Boolean - true, false
- *      1-4. Null - null
- *      1-5. Undefined - undefined
- *      1-6. Symbol() - for uniq identifier // example - console.log(Symbol());
- * 
- *  2. Objects - reference type (ссылочный)
- *      2-1. Object - { name: 'Pit', age; 25 } // example - console.table({});
- *      2-2. Array - [1, 2, 3]
- *      2-3. Function - function foo() {}
- *      2-4. Date - new Date();
- *  */  
+const tasks = [
+        {
+          _id: '5d2ca9e2e03d40b326596aa7',
+          completed: true,
+          body:
+            'Occaecat non ea quis occaecat ad culpa amet deserunt incididunt elit fugiat pariatur. Exercitation commodo culpa in veniam proident laboris in. Excepteur cupidatat eiusmod dolor consectetur exercitation nulla aliqua veniam fugiat irure mollit. Eu dolor dolor excepteur pariatur aute do do ut pariatur consequat reprehenderit deserunt.\r\n',
+          title: 'Eu ea incididunt sunt consectetur fugiat non.',
+        },
+        {
+          _id: '5d2ca9e29c8a94095c1288e0',
+          completed: false,
+          body:
+            'Aliquip cupidatat ex adipisicing veniam do tempor. Lorem nulla adipisicing et esse cupidatat qui deserunt in fugiat duis est qui. Est adipisicing ipsum qui cupidatat exercitation. Cupidatat aliqua deserunt id deserunt excepteur nostrud culpa eu voluptate excepteur. Cillum officia proident anim aliquip. Dolore veniam qui reprehenderit voluptate non id anim.\r\n',
+          title:
+            'Deserunt laborum id consectetur pariatur veniam occaecat occaecat tempor voluptate pariatur nulla reprehenderit ipsum.',
+        },
+        {
+          _id: '5d2ca9e2e03d40b3232496aa7',
+          completed: true,
+          body:
+            'Occaecat non ea quis occaecat ad culpa amet deserunt incididunt elit fugiat pariatur. Exercitation commodo culpa in veniam proident laboris in. Excepteur cupidatat eiusmod dolor consectetur exercitation nulla aliqua veniam fugiat irure mollit. Eu dolor dolor excepteur pariatur aute do do ut pariatur consequat reprehenderit deserunt.\r\n',
+          title: 'Eu ea incididunt sunt consectetur fugiat non.',
+        },
+        {
+          _id: '5d2ca9e29c8a94095564788e0',
+          completed: false,
+          body:
+            'Aliquip cupidatat ex adipisicing veniam do tempor. Lorem nulla adipisicing et esse cupidatat qui deserunt in fugiat duis est qui. Est adipisicing ipsum qui cupidatat exercitation. Cupidatat aliqua deserunt id deserunt excepteur nostrud culpa eu voluptate excepteur. Cillum officia proident anim aliquip. Dolore veniam qui reprehenderit voluptate non id anim.\r\n',
+          title:
+            'Deserunt laborum id consectetur pariatur veniam occaecat occaecat tempor voluptate pariatur nulla reprehenderit ipsum.',
+        },
+      ];
+      
+      (function(arrOfTasks) {})(tasks);
+      
